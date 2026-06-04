@@ -20,7 +20,7 @@ jobs:
         run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
       - name: Run API Tests with Monitor
         run: |
-          postman monitor run "<REPLACE_THIS_WITH_YOUR_MONITOR_ID>"
+          postman monitor run 1f16021a-2ec2-4bd0-9488-e52207f5f0f3
         continue-on-error: true
       - name: Lint Service Specification
         run: |
